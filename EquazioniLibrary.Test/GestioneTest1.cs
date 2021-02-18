@@ -10,20 +10,19 @@ namespace EquazioniLibrary.Test
 		public void TestDeterminata1()
 		{
 			double a = 6;
-			double b = 5;
 			bool valoreGiusto = true;
-			bool valoreSbagliato = Equazioni.IsDetermined(a, b);
+			bool valoreSbagliato = Equazioni.IsDetermined(a);
 			Assert.Equals(valoreGiusto, valoreSbagliato);
 		}
+		[TestMethod]
 		public void TestDeterminata2()
 		{
 			double a = 22;
-			double b = 12;
 			bool valoreGiusto = true;
-			bool valoreSbagliato = Equazioni.IsDetermined(a, b);
+			bool valoreSbagliato = Equazioni.IsDetermined(a);
 			Assert.Equals(valoreGiusto, valoreSbagliato);
 		}
-
+		[TestMethod]
 		public void IsInconsisted1()
 		{
 			double a = 0;
@@ -32,6 +31,7 @@ namespace EquazioniLibrary.Test
 			bool valoreSbagliato = Equazioni.IsInconsisted(a, b);
 			Assert.Equals(valoreGiusto, valoreSbagliato);
 		}
+		[TestMethod]
 		public void IsInconsisted2()
 		{
 			double a = 0;
@@ -41,5 +41,15 @@ namespace EquazioniLibrary.Test
 			Assert.Equals(valoreGiusto, valoreSbagliato);
 
 		}
-	}
+		[TestMethod]
+		public void IsDegree1()
+		{
+			double a = 0;
+			bool valoreGiusto = false;
+			bool valoreSbagliato = Equazioni.IsDegree(a);
+			Assert.Equals(valoreGiusto, valoreSbagliato);
+		}
+		
+
+		}
 }
