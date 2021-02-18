@@ -6,20 +6,34 @@ namespace EquazioniLibrary
 	{
 		public static bool IsDetermined( double a, double b)
 		{
-			bool determinata;
+			bool determinata = false;
 			if (a != 0)
 			{
-				determinata = true;
-				return true;
+				if (b!=0)
+				{
+					determinata = true;
+             	}
 
 			}
-			else
-			{
-				determinata = false;
-				return false;
-
-			}
+			return determinata;
+			
 		}
+
+		public static bool IsInconsisted(double a, double b)
+		{
+			bool determinata = false;
+			if (a == 0)
+			{
+				if (b != 0)
+				{
+					determinata = true;
+				}
+
+			}
+			return determinata;
+
+		}
+
 
 	}
 }
