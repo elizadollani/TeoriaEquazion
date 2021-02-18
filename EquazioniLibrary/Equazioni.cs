@@ -10,9 +10,16 @@ namespace EquazioniLibrary
 			if (a != 0)
 			{
 				determinata = true;
-			}
-			return true;
+				return true;
 
+			}
+			else
+			{
+				determinata = false;
+				return false;
+
+			}
 		}
+
 	}
 }

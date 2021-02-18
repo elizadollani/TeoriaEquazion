@@ -9,7 +9,10 @@ namespace EquazioniLibrary.Test
 		[TestMethod]
 		public void TestDeterminata()
 		{
-
+			double a = 6;
+			double b = 5;
+			bool detrminata = Equazioni.IsDetermined(a, b);
 		}
 	}
+
 }
