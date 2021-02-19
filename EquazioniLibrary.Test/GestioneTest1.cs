@@ -9,7 +9,7 @@ namespace EquazioniLibrary.Test
 		[TestMethod]
 		public void TestDeterminata1()
 		{
-			double a = 6;
+			double a = 4;
 			bool valoreGiusto = true;
 			bool valoreSbagliato = Equazioni.IsDetermined(a);
 			Assert.Equals(valoreGiusto, valoreSbagliato);
